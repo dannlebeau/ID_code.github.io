@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Dann LeBeau">
+  <meta name="description" content="Generador ID en reemplazo del rut">
+  <meta name="keywords" content="ID, rut, NES, codigo, seguridad">
+  <title>Generador de Código Único</title>
+  <!--The own the this page web is Dann LaBeau-->
+  <!-- minify -->
+  <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+  <!-- latest -->
+  <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+  <!-- core style only -->
+  <link href="https://unpkg.com/nes.css/css/nes-core.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <div class="nes-container with-title">
+    <h1 class="title">Generador de Código</h1>
+    <form id="generadorForm">
+      <div class="nes-field">
+        <label for="rut" class="nes-text">Ingresa tu RUT:</label>
+        <input type="text" id="rut" class="nes-input" placeholder="Ej: 12345678-9" required>
+      </div><br>
+      <button type="button" class="nes-btn is-success" onclick="generarCodigo()">Generar Código</button>
+      <div id="codigoGenerado" class="nes-text"></div>
+    </form>
+  </div>
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
